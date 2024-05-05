@@ -14,8 +14,8 @@
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "echo 'no build required'", 
-    "start": "node server.js"
+    "build": "echo 'no build required'",
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC"

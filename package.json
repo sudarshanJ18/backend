@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "echo 'no build required'",
+    "build": "echo 'no build required'", 
     "start": "node server.js"
   },
   "author": "",

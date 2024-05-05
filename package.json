@@ -14,8 +14,7 @@
     "nodemailer": "^6.9.13"
   },
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "nodemon backend/server.js"
   },
   "author": "",
   "license": "ISC"

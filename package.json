@@ -13,9 +13,9 @@
     "nodemailer": "^6.9.13"
   },
   "scripts": {
-    "dev": "nodemon backend/server.js",
+    "dev": "nodemon server.js",
     "build": "echo 'no build required'", 
-    "start": "node backend/server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"

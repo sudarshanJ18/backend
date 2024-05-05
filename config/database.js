@@ -1,18 +1,16 @@
 import mongoose from "mongoose";
-const mongoose = require('mongoose');
-mongoose.set('strictQuery', true);
 
+mongoose.set('strictQuery', true);
 
 export const connectDatabase = () => {
   mongoose
     .connect(process.env.MONGO_URI)
     .then((c) => {
-      console.log(`Mongodb connect to: ${c.connection.host}`);
-      console.log("database conected")
+      console.log(`Mongodb connected to: ${c.connection.host}`);
+      console.log("database connected")
     })
     .catch((e) => {
       console.log(e);
-      console.log("Sudarshan Reddy");
+      console.log("Failed to connect to the database");
     });
-
 };

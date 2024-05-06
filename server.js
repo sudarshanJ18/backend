@@ -2,6 +2,7 @@ import { app } from "./app.js";
 import dotenv from "dotenv";
 import { connectDatabase } from "./config/database.js";
 import cloudinary from "cloudinary";
+import cors from "cors"; // Import CORS middleware
 
 dotenv.config({ path: "./backend/config/config.env" });
 
@@ -12,6 +13,9 @@ cloudinary.v2.config({
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
+
+// Enable CORS for all requests
+app.use(cors());
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port: ${process.env.PORT} `);
